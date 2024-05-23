@@ -1,6 +1,7 @@
 package com.example.meuportifoliomobile;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -32,5 +33,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        TextView link = findViewById(R.id.textView_link);
+        link.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/AnitaGB"));
+                startActivity(browserIntent);
+            }
+        });
+
     }
 }

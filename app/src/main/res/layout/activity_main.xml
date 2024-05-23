@@ -13,14 +13,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/proximo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#00838F">
+            android:layout_height="wrap_content">
 
             <ImageView
                 android:id="@+id/profile_img"
@@ -63,16 +63,26 @@
             android:textAlignment="center"
             android:textColor="#02251A" />
 
+        <TextView
+            android:id="@+id/textView_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="https://github.com/AnitaGB"
+            android:textAlignment="center"
+            android:textColor="#4527A0"
+            android:textColorHighlight="#1A2A9E" />
+
     </LinearLayout>
 
     <Button
         android:id="@+id/proximo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
         android:text="Próximo"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
